@@ -9,6 +9,10 @@ public class Voetbalclub {
     // Constructor
     public Voetbalclub(String naam) {
         this.naam = naam.trim(); // Trim om overbodige spaties te verwijderen
+        if (this.naam.isEmpty()) {
+            this.naam = "FC";
+        }
+
         this.aantalGewonnen = 0;
         this.aantalGelijk = 0;
         this.aantalVerloren = 0;
@@ -29,6 +33,10 @@ public class Voetbalclub {
             default:
                 System.out.println("Ongeldig resultaat: " + resultaat);
         }
+    }
+
+    public String name() {
+        return naam;
     }
 
     // Methode om totaal aantal punten te berekenen
