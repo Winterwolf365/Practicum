@@ -1,3 +1,5 @@
+package Practicum3A;
+
 import Practicum2B.Voetbalclub;
 import org.junit.jupiter.api.Test;
 
